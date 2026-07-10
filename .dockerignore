@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+tests/
+.git/
+*.db
+*.registry_cache.json
+registry_snapshot_*.json
