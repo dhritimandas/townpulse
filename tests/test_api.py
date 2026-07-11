@@ -129,6 +129,18 @@ def test_recommend_missing_need_returns_400_with_hint(client):
     assert "hint" in resp.json()
 
 
+def test_root_response_shape(client):
+    resp = client.get("/")
+    assert resp.status_code == 200
+    assert resp.json() == {
+        "service": "Town Pulse",
+        "description": "Continuous reliability index for the Nanda Town registry",
+        "skill_md": "https://townpulse-production.up.railway.app/skill.md",
+        "about": "/about",
+        "health": "/health",
+    }
+
+
 def test_about_and_health(client):
     about_resp = client.get("/about")
     assert about_resp.status_code == 200

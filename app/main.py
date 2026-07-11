@@ -24,6 +24,14 @@ logging.basicConfig(level=logging.INFO)
 _startup_time = datetime.now(timezone.utc).isoformat(timespec="seconds")
 _SKILL_MD_PATH = Path(__file__).resolve().parent.parent / "SKILL.md"
 
+ROOT = {
+    "service": "Town Pulse",
+    "description": "Continuous reliability index for the Nanda Town registry",
+    "skill_md": "https://townpulse-production.up.railway.app/skill.md",
+    "about": "/about",
+    "health": "/health",
+}
+
 ABOUT = {
     "methodology": (
         "Every 15 minutes Town Pulse fetches the Nanda Town registry, probes "
@@ -94,6 +102,11 @@ async def town_pulse_error_handler(request: Request, exc: TownPulseError) -> JSO
 async def validation_error_handler(request: Request, exc: RequestValidationError) -> JSONResponse:
     messages = "; ".join(f"{'.'.join(str(p) for p in e['loc'])}: {e['msg']}" for e in exc.errors())
     return JSONResponse(status_code=400, content={"error": "invalid request", "hint": messages})
+
+
+@app.get("/")
+def root() -> dict:
+    return ROOT
 
 
 @app.get("/health")
