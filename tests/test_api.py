@@ -150,7 +150,9 @@ def test_about_and_health(client):
     assert health_resp.status_code == 200
 
 
-def test_skill_md_404_when_not_yet_published(client):
+def test_skill_md_404_when_not_yet_published(client, tmp_path, monkeypatch):
+    monkeypatch.setattr(main_module, "_SKILL_MD_PATH", tmp_path / "SKILL.md")
+
     resp = client.get("/skill.md")
     assert resp.status_code == 404
     assert resp.json() == {
