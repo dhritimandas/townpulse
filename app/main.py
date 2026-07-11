@@ -34,7 +34,7 @@ ROOT = {
 
 ABOUT = {
     "methodology": (
-        "Every 15 minutes Town Pulse fetches the Nanda Town registry, probes "
+        "Every few minutes Town Pulse fetches the Nanda Town registry, probes "
         "each tracked skill, and recomputes its reliability score from the "
         "accumulated probe history. Serving endpoints only read precomputed "
         "scores; they never probe or rescore on request."
@@ -53,9 +53,9 @@ ABOUT = {
         "endpoint's host, and declared GET endpoints containing no {placeholder}. It "
         "never sends POST/PUT/DELETE/PATCH, never substitutes values into parameterized "
         "endpoints, and never attempts authentication. Each target is probed at most "
-        "once per 15-minute cycle, with a 10s timeout and the identifying User-Agent "
-        "TownPulse/1.0. A 401/403/405 response to a root-host probe counts as evidence "
-        "the host is alive, not as a failure."
+        "once per endpoint per cycle, cycles at least 5 minutes apart, with a 10s "
+        "timeout and the identifying User-Agent TownPulse/1.0. A 401/403/405 response "
+        "to a root-host probe counts as evidence the host is alive, not as a failure."
     ),
     "dedup_policy": (
         "The registry's edit path is resubmission (no edit button), so the same skill "

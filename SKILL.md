@@ -126,7 +126,7 @@ public: https://github.com/dhritimandas/townpulse and GET /about.
 ## Measurement ethics
 
 Town Pulse only issues read-only GET requests to URLs that participants publicly declared
-in the Nanda Town registry, at most once per endpoint per 15-minute cycle, with the
-identifying User-Agent `TownPulse/1.0`. It never sends POST/PUT/DELETE requests, never
-substitutes values into parameterized endpoints, and never attempts authentication.
-Scoring formula and methodology: GET /about.
+in the Nanda Town registry, at most once per endpoint per cycle, cycles at least 5 minutes
+apart, with the identifying User-Agent `TownPulse/1.0`. It never sends POST/PUT/DELETE
+requests, never substitutes values into parameterized endpoints, and never attempts
+authentication. Scoring formula and methodology: GET /about.

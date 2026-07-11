@@ -1,7 +1,7 @@
 """Cycle orchestration: fetch registry -> ingest+dedup -> probe -> score.
 
 One ``run_cycle()`` call is one full prober cycle (spec §2 diagram),
-scheduled every 15 minutes.
+scheduled every 5 minutes.
 """
 
 import sqlite3
