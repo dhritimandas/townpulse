@@ -1,0 +1,124 @@
+{
+    "skills_tracked": 173,
+    "alive_now": 153,
+    "alive_now_pct": 88.4,
+    "ever_dead_pct": 12.1,
+    "median_latency_ms": 108,
+    "top": [
+        {
+            "id": "51d4c679-19de-4c2f-9e8b-b8f017fb31f2",
+            "name": "AgentDrop",
+            "score": 100.0
+        },
+        {
+            "id": "d0c22dee-3491-4460-925f-efce95488bbb",
+            "name": "SkillMD Doctor Contract Pack",
+            "score": 100.0
+        },
+        {
+            "id": "8c4d54de-944c-438a-8305-734ce267ad61",
+            "name": "agreed-deal-certifier",
+            "score": 100.0
+        },
+        {
+            "id": "d57dbd27-38e7-48ec-a037-451a687e8625",
+            "name": "SkillProbe",
+            "score": 100.0
+        },
+        {
+            "id": "b6c8d755-ba7a-4135-9e74-3a792e648160",
+            "name": "NANDA Scenario Doctor",
+            "score": 100.0
+        },
+        {
+            "id": "30274e96-df3c-4ff6-8dba-3f0c2dcd116c",
+            "name": "NANDA Simulation Sandbox 2",
+            "score": 100.0
+        },
+        {
+            "id": "de35336a-f85d-43f5-abfa-2fb37a7f6d93",
+            "name": "The Town Notary",
+            "score": 99.9
+        },
+        {
+            "id": "6a1b9f53-fa75-4a29-b24c-ac1baf232a7d",
+            "name": "Ward Watch \u2014 Neighborhood Digests (composes AgentHall)",
+            "score": 99.9
+        },
+        {
+            "id": "511e6dfe-4e82-48a7-a8cd-fcccac834e4d",
+            "name": "EFS Scribe",
+            "score": 99.9
+        },
+        {
+            "id": "49d1f281-a4ef-4290-85e5-3c8a53801d40",
+            "name": "chainaim-deal-to-settlement",
+            "score": 99.9
+        }
+    ],
+    "worst": [
+        {
+            "id": "62e6ba11-fc0a-402c-8960-3057b2c9b46d",
+            "name": "Capability Token Service",
+            "score": 0.0
+        },
+        {
+            "id": "4ef1be31-5dbe-4570-8a46-5eb05960a200",
+            "name": "AgentPass",
+            "score": 0.0
+        },
+        {
+            "id": "57959c60-acb5-4536-b10a-a27aa784ec84",
+            "name": "AskReceipts",
+            "score": 0.0
+        },
+        {
+            "id": "232bf4af-5be1-4d0a-8c6d-5dd2df78884f",
+            "name": "Nanostats",
+            "score": 0.0
+        },
+        {
+            "id": "36455495-ab77-4b20-9608-58b08a30ed4c",
+            "name": "Nano stats",
+            "score": 0.0
+        },
+        {
+            "id": "36fbd62b-6406-4caa-a536-8d3a6b74475c",
+            "name": "Nano_Stats",
+            "score": 0.0
+        },
+        {
+            "id": "c87582da-044c-4c17-9d6a-a57240a595c2",
+            "name": "Vanya Kumar",
+            "score": 0.0
+        },
+        {
+            "id": "26844aab-c0bb-4020-9830-6d1895b11004",
+            "name": "Mandate Check",
+            "score": 0.0
+        },
+        {
+            "id": "b976dab2-972e-4301-a1a4-cb928aab04d6",
+            "name": "Slum Detection and Expansion",
+            "score": 0.0
+        },
+        {
+            "id": "a4949635-bc07-4eec-ae3d-c1bca7b7a6d8",
+            "name": "Agent to Agent Contract",
+            "score": 0.0
+        }
+    ],
+    "registry_self_reported": {
+        "true": 135,
+        "false": 6,
+        "null": 32
+    },
+    "probe_run": {
+        "records_ingested": 233,
+        "active_after_dedup": 173,
+        "superseded": 60,
+        "cycle_ts": "2026-07-11T07:40:06+00:00",
+        "targets_probed": 607,
+        "ok_probes": 532
+    }
+}

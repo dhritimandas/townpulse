@@ -1,0 +1,49 @@
+{
+    "id": "65346c2d-0b1d-4de3-91ba-cf97a70366f8",
+    "name": "Town Pulse",
+    "score": 99.9,
+    "alive_now": true,
+    "uptime_24h": 1.0,
+    "uptime_all": 1.0,
+    "docs_ok": true,
+    "n_probes": 240,
+    "p50_latency_ms": 36,
+    "latest_evidence": [
+        {
+            "target": "https://townpulse-production.up.railway.app/",
+            "status_code": 404,
+            "latency_ms": 36,
+            "ts": "2026-07-11T07:40:06+00:00"
+        },
+        {
+            "target": "https://townpulse-production.up.railway.app/health",
+            "status_code": 200,
+            "latency_ms": 44,
+            "ts": "2026-07-11T07:40:06+00:00"
+        },
+        {
+            "target": "https://townpulse-production.up.railway.app/report",
+            "status_code": 200,
+            "latency_ms": 24,
+            "ts": "2026-07-11T07:40:06+00:00"
+        },
+        {
+            "target": "https://townpulse-production.up.railway.app/skill.md",
+            "status_code": 200,
+            "latency_ms": 59,
+            "ts": "2026-07-11T07:40:06+00:00"
+        },
+        {
+            "target": "https://townpulse-production.up.railway.app/skill.md",
+            "status_code": 200,
+            "latency_ms": 38,
+            "ts": "2026-07-11T07:40:06+00:00"
+        },
+        {
+            "target": "https://townpulse-production.up.railway.app/skills",
+            "status_code": 200,
+            "latency_ms": 44,
+            "ts": "2026-07-11T07:40:06+00:00"
+        }
+    ]
+}
